@@ -3,7 +3,7 @@
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene xr-mode-ui="XRMode:xr">
       <a-assets>
         <img id="azulejo" src="textura suelo.jpg">
 
@@ -13,7 +13,8 @@
       <a-cylinder position="1 0.75 -3" rotation="0 45 0" color="#EF2D5E"></a-box>
       <a-box position="0.519 1.61 0.678" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-plane position="0.57123 -1.46995 -1.94957" rotation="-90 0 0" width="4" height="4"    
-     src="#azulejo"></a-plane>
+     src="#azulejo">
+    </a-plane><a-sky hide-on-enter-ar color="ECECEC"><</a-sky>
     </a-scene>
   </body>
 </html>
